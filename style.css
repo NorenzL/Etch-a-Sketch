@@ -4,16 +4,13 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 32px;
   background-color: rgb(240, 204, 158);
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  width: 768px;
-  height: 768px;
-  margin-bottom: 50px;
+  margin-top: 20px;
 }
 
 h1 {
@@ -26,10 +23,9 @@ h1 {
 
 .col {
   display: flex;
-  flex-grow: 1;
   border: 1px solid black;
-  width: calc(768px / 16);
-  height: calc(768px / 16);
+  width: calc(600px / 16);
+  height: calc(600px / 16);
   background-color: white;
 }
 
