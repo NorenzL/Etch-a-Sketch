@@ -19,3 +19,15 @@ for (let i = 1; i <= size; i++) {
 
   container.appendChild(row);
 }
+
+const col = document.querySelectorAll(".col");
+
+col.forEach((cols) => {
+  cols.addEventListener("mouseenter", () => {
+    let randomRed = Math.floor(Math.random() * 256);
+    let randomGreen = Math.floor(Math.random() * 256);
+    let randomBlue = Math.floor(Math.random() * 256);
+
+    cols.style.backgroundColor = `rgb(${randomRed}, ${randomGreen}, ${randomBlue})`;
+  });
+});
