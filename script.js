@@ -19,7 +19,7 @@ function createGrid(gridSize) {
   const cols = document.querySelectorAll(".col");
 
   cols.forEach((columns) => {
-    const newColSize = 960 / gridSize;
+    const newColSize = 768 / gridSize;
 
     columns.style.width = `${newColSize}px`;
     columns.style.height = `${newColSize}px`;
@@ -43,9 +43,9 @@ function createTrail() {
   });
 }
 
-const resetBtn = document.querySelector(".btn");
+const resize = document.querySelector(".btn");
 
-resetBtn.addEventListener("click", () => {
+resize.addEventListener("click", () => {
   do {
     size = prompt("Enter a number for the size of the grid. (2-100).");
 
@@ -68,4 +68,14 @@ resetBtn.addEventListener("click", () => {
   }
   createGrid(size);
   createTrail();
+});
+
+const reset = document.querySelector(".reset");
+
+reset.addEventListener("click", () => {
+  const col = document.querySelectorAll(".col");
+
+  col.forEach((cols) => {
+    cols.style.backgroundColor = "rgb(255, 255, 2552)";
+  });
 });

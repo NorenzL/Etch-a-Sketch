@@ -1,5 +1,6 @@
 body {
   display: flex;
+  font-family: "Delicious Handrawn", cursive;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -10,8 +11,8 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  width: 960px;
-  height: 960px;
+  width: 768px;
+  height: 768px;
   margin-bottom: 50px;
 }
 
@@ -25,15 +26,17 @@ h1 {
 
 .col {
   display: flex;
+  flex-grow: 1;
   border: 1px solid black;
-  width: calc(960px / 16);
-  height: calc(960px / 16);
+  width: calc(768px / 16);
+  height: calc(768px / 16);
   background-color: white;
 }
 
 .btn {
+  font-family: "Delicious Handrawn", cursive;
   padding: 10px 25px;
-  font-size: 16px;
+  font-size: 25px;
   border-radius: 15px;
   background-color: rgb(250, 235, 215);
 }
