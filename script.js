@@ -40,9 +40,21 @@ function createTrail() {
 const resetBtn = document.querySelector(".btn");
 
 resetBtn.addEventListener("click", () => {
-  size = Number(
-    prompt("Enter a number for the size of the grid. Maximum of 100.")
-  );
+  do {
+    size = prompt("Enter a number for the size of the grid. (2-100).");
+
+    if (size === null || size === "") {
+      alert("Input a number!");
+    } else {
+      Number(size);
+
+      if (size > 100) {
+        alert("Maximum of 100 grid size!");
+      } else if (size <= 1) {
+        alert("Minimum of 2 grid size!");
+      }
+    }
+  } while (size > 100 || size <= 1);
 
   // Removes grid
   while (container.firstChild) {
