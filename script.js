@@ -2,13 +2,10 @@ const container = document.querySelector(".container");
 
 let size = 16;
 
-function createGrid() {
-  for (let i = 1; i <= size; i++) {
+function createGrid(gridSize) {
+  for (let i = 1; i <= gridSize; i++) {
     const row = document.createElement("div");
-    const gridClass = document.createAttribute("class");
-    gridClass.value = "grid";
-
-    row.setAttributeNode(gridClass);
+    row.setAttribute("class", "row");
 
     for (let j = 1; j <= size; j++) {
       const col = document.createElement("div");
@@ -18,9 +15,18 @@ function createGrid() {
 
     container.appendChild(row);
   }
+
+  const cols = document.querySelectorAll(".col");
+
+  cols.forEach((columns) => {
+    const newColSize = 960 / gridSize;
+
+    columns.style.width = `${newColSize}px`;
+    columns.style.height = `${newColSize}px`;
+  });
 }
 
-createGrid();
+createGrid(size);
 createTrail();
 
 function createTrail() {
@@ -60,6 +66,6 @@ resetBtn.addEventListener("click", () => {
   while (container.firstChild) {
     container.removeChild(container.firstChild);
   }
-  createGrid();
+  createGrid(size);
   createTrail();
 });

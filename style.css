@@ -4,26 +4,36 @@ body {
   justify-content: center;
   align-items: center;
   gap: 32px;
+  background-color: rgb(240, 204, 158);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 960px;
+  height: 960px;
+  margin-bottom: 50px;
 }
 
 h1 {
   font-size: 50px;
 }
 
-.grid {
+.row {
   display: flex;
 }
 
 .col {
   display: flex;
   border: 1px solid black;
-  padding: 20px;
+  width: calc(960px / 16);
+  height: calc(960px / 16);
+  background-color: white;
 }
 
 .btn {
   padding: 10px 25px;
   font-size: 16px;
-  border: 1px solid black;
   border-radius: 15px;
   background-color: rgb(250, 235, 215);
 }
