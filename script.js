@@ -50,25 +50,31 @@ resize.addEventListener("click", () => {
   do {
     size = prompt("Enter a number for the size of the grid. (2-100).");
 
-    if (size === null || size === "") {
+    if (size === "") {
       alert("Input a number!");
+    } else if (size === null) {
+      break;
     } else {
-      Number(size);
+      size = Number(size);
 
       if (size > 100) {
         alert("Maximum of 100 grid size!");
       } else if (size <= 1) {
         alert("Minimum of 2 grid size!");
+      } else if (!Number.isInteger(size)) {
+        alert("Not an Integer!");
       }
     }
-  } while (size > 100 || size <= 1);
+  } while (!Number.isInteger(size) || size > 100 || size <= 1 || size === "");
 
   // Removes grid
-  while (container.firstChild) {
-    container.removeChild(container.firstChild);
+  if (Number.isInteger(size)) {
+    while (container.firstChild) {
+      container.removeChild(container.firstChild);
+    }
+    createGrid();
+    createTrail();
   }
-  createGrid();
-  createTrail();
 });
 
 // Reset button
