@@ -9,16 +9,14 @@ body {
 
 .container {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
   margin-top: 20px;
 }
 
 h1 {
   font-size: 50px;
-}
-
-.row {
-  display: flex;
 }
 
 .col {
@@ -27,6 +25,7 @@ h1 {
   width: calc(600px / 16);
   height: calc(600px / 16);
   background-color: white;
+  box-sizing: border-box;
 }
 
 .btn {

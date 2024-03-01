@@ -2,8 +2,8 @@ const container = document.querySelector(".container");
 
 let size = 16;
 
-function createGrid(gridSize) {
-  for (let i = 1; i <= gridSize; i++) {
+function createGrid() {
+  for (let i = 1; i <= size; i++) {
     const row = document.createElement("div");
     row.setAttribute("class", "row");
 
@@ -19,14 +19,14 @@ function createGrid(gridSize) {
   const cols = document.querySelectorAll(".col");
 
   cols.forEach((columns) => {
-    const newColSize = 600 / gridSize;
+    const newColSize = 600 / size;
 
     columns.style.width = `${newColSize}px`;
     columns.style.height = `${newColSize}px`;
   });
 }
 
-createGrid(size);
+createGrid();
 createTrail();
 
 function createTrail() {
@@ -67,7 +67,7 @@ resize.addEventListener("click", () => {
   while (container.firstChild) {
     container.removeChild(container.firstChild);
   }
-  createGrid(size);
+  createGrid();
   createTrail();
 });
 
