@@ -1,6 +1,6 @@
 # Etch-a-Sketch
 
-Etch-a-Sketch is a simple drawing application inspired by the classic toy. Users can draw pixelated trails by hovering their mouse over a grid of tiles.
+Etch-a-Sketch is a simple drawing webpage inspired by the classic toy. Users can draw pixelated trails by hovering their mouse over a grid of tiles.
 
 ## Features
 
