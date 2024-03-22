@@ -8,6 +8,12 @@ Etch-a-Sketch is a simple drawing webpage inspired by the classic toy. Users can
 - Hover over tiles to color them, simulating a drawing effect.
 - Pixelated drawing style, similar to using a pen on paper.
 - Easy to use and intuitive interface.
+  
+## Live Demo
+
+You can access the live demo [here](https://norenzl.github.io/Etch-a-Sketch/). 
+
+This demo allows you to try out the Etch-a-Sketch drawing functionality directly in your browser.
 
 ## Technologies Used
 
