@@ -11,7 +11,7 @@ Etch-a-Sketch is a simple drawing webpage inspired by the classic toy. Users can
   
 ## Live Demo
 
-You can access the live demo [here](https://norenzl.github.io/Etch-a-Sketch/){:target="_blank"}. 
+You can access the live demo [here](https://norenzl.github.io/Etch-a-Sketch/).
 
 This demo allows you to try out the Etch-a-Sketch drawing functionality directly in your browser.
 
