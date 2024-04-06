@@ -2,7 +2,6 @@
 
 Etch-a-Sketch is a simple drawing webpage inspired by the classic toy. Users can draw pixelated trails by hovering their mouse over a grid of tiles.
 
-![Screenshot 2024-04-06 132652](https://github.com/NorenzL/Etch-a-Sketch/assets/68904749/91e3e66f-0fc4-4e2d-9fea-d1af3e7899e5)
 ![Screenshot 2024-04-06 133054](https://github.com/NorenzL/Etch-a-Sketch/assets/68904749/a6ec4806-d1f8-43af-9683-2f455a4a5e45)
 
 ## Features
