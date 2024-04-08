@@ -29,3 +29,7 @@ This demo allows you to try out the Etch-a-Sketch drawing functionality directly
 2. Adjust the grid size by clicking the `Change Grid Size` button.
 3. Hover your mouse over the grid tiles to draw.
 4. Click the `Reset` button to reset the tiles back to white.
+
+## Contributing
+
+If you find any issues or have suggestions for improvement, feel free to open an issue or submit a pull request. Contributions are welcome!
